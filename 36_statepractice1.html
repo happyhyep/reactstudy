@@ -25,6 +25,9 @@
                 <input value = {minutes/60} id="hours" placeholder="Hours" type="number"></input>
             </div>
         </div>
+        //hours 인풋에는 onchange 함수 없음!!
+        //div밖에서 정의하면 오류남 ..
+        //모두 div 안에 있게 만들어줘야함
         );
     }
     const root = document.getElementById("root");
