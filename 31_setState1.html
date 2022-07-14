@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    const root = document.getElementById("root");
+
+    function App() {
+        {/* const data = React.useState(0); */}
+        {/* React.useState() 함수 : [초기값, 실행할 function]의 리스트 형태 */}
+        const [counter, modifier] = React.useState(0);
+        {/* const data = React.useState(0)과 같음 */}
+        {/* const [myFavFood,mySecFavFood] = ["tomato","potato"]문법 사용 (리스트 내용을 변수에 바로 저장할 수 있음) */}
+        return (
+      <div>
+        <h3>Total Clicks : {counter}</h3>
+        <button>Click me</button>
+      </div>
+        );
+    }
+    ReactDOM.render(<App />,root);
+  </script>
+</html>
+
+
