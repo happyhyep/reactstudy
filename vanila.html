@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <span>Total clicks: 0</span>
-        <button id="btn">Click me</button>
-    </body>
-    <script>
-        let counter = 0;
-        const button = document.getElementById("btn");
-        const span = document.querySelector("span");
-        function handleClick(){
-            counter = counter +1;
-            span.innerText = `Total clicks: ${counter}`;  //''홑따옴표가 아니고 ``를 사용해야함! (키보드상 ~과 같이 있는 기호)
-        }
-        button.addEventListener("click", handleClick)
-    </script>
+  <body>
+    <span>Total clicks: 0</span>
+    <button id="btn">Click me</button>
+  </body>
+  <script>
+    let counter = 0;
+    const button = document.getElementById("btn");
+    const span = document.querySelector("span");
+    function handleClick() {
+      counter = counter + 1;
+      span.innerText = `Total clicks: ${counter}`; //''홑따옴표가 아니고 ``를 사용해야함! (키보드상 ~과 같이 있는 기호)
+    }
+    button.addEventListener("click", handleClick);
+  </script>
 </html>
